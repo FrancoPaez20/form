@@ -147,3 +147,17 @@
 	}
 
 }())
+
+const labels = document.querySelectorAll('label');
+
+labels.forEach(x => {
+	x.addEventListener('keyup', function(evt){
+
+		if(evt.keyCode === 32){
+			
+			const input = document.getElementById(x.htmlFor)
+			input.checked = !input.checked
+			
+		}
+	})
+})
