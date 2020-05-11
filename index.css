@@ -1,0 +1,235 @@
+/*Fuentes*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	text-decoration: none;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	scroll-behavior: smooth;
+	font-family: 'Poppins', sans-serif;
+}
+
+body{
+
+	background: #f2f2f2;
+	min-height: 100vh;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: center;
+}
+
+.wrap{
+
+	max-width: 500px;
+	width: 100%;
+	margin: 10px;
+	padding: 40px;
+	background: #fff;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.wrap:hover{
+
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.form{
+
+	width: 100%;
+}
+
+.form .input-group {
+
+	position: relative;
+	margin-bottom: 32px;
+}
+
+.form .input-group input[type="text"],
+.form .input-group input[type="email"],
+.form .input-group input[type="password"]{
+
+	width: 100%;
+	padding: 15px;
+	color: #303F9F;
+	background: none;
+	outline: none;
+	border: none;
+	border-bottom: 2px solid #BBDEFB;
+}
+
+.form .input-group input[type="text"]:focus,
+.form .input-group input[type="text"]:active,
+.form .input-group input[type="email"]:focus,
+.form .input-group input[type="email"]:active,
+.form .input-group input[type="password"]:focus,
+.form .input-group input[type="password"]:active{
+
+	outline: none;
+	border-bottom-color: #303F9F;
+}
+
+.form .input-group input[type="text"].error,
+.form .input-group input[type="email"].error,
+.form .input-group input[type="password"].error{
+
+	border-bottom-color: #D32F2F;
+}
+
+.form .input-group input[type="text"].error + label,
+.form .input-group input[type="email"].error + label,
+.form .input-group input[type="password"].error + label{
+
+	color: #D32F2F;
+}
+
+.form .input-group label{
+
+	color: #303F9F;
+}
+
+.form .input-group label.label{
+
+	-webkit-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	margin-left: 15px;
+	line-height: 16px;
+	position: absolute;
+	top: 16px;
+	left: 0;
+}
+
+.form .input-group label.label.active{
+
+	top: -12px;
+	font-size: 12px;
+	line-height: 12px;
+	color: #B6B6B6;
+}
+
+.form .input-group.radio label,
+.form .input-group.checkbox label{	
+
+	display: inline-block;
+	cursor: pointer;
+	color: #303F9F;
+	position: relative;
+	padding: 5px 15px 5px 50px;
+	-webkit-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+.form .input-group.radio label:hover,
+.form .input-group.checkbox label:hover{
+
+	background: #BBDEFB;
+}
+
+.form .input-group.checkbox label:before,
+.form .input-group.radio label:before{
+
+	content: "";
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	left: 15px;
+	top: 50%;
+	transform: translateY(-50%);
+	border-radius: 50%;
+	background: none;
+	border: 2px solid #303F9F;
+}
+
+.form .input-group.error label{
+
+	color: #D32F2F;
+}
+
+.form .input-group.error label:hover{
+
+	background: rgba(211, 47, 47, 0.2);
+}
+
+.form .input-group.error label:before{
+
+	border: 2px solid #D32F2F;
+}
+
+.form .input-group.radio input[type="radio"]{
+
+	display: none;
+}
+
+.form .input-group.radio input[type="radio"]:checked + label:before{
+
+	display: none;
+}
+
+.form .input-group.radio input[type="radio"]:checked + label{
+
+	padding: 5px 15px;
+	background: #303F9F;
+	border-radius: 2px;
+	color: #F2F2F2;
+}
+
+.form .input-group.checkbox label:before{
+
+	border-radius: 3px;
+}
+
+.form .input-group.checkbox input[type="checkbox"]{
+
+	display: none;
+}
+
+.form .input-group.checkbox input[type="checkbox"]:checked + label:before{
+
+	display: none;
+}
+
+.form .input-group.checkbox input[type="checkbox"]:checked + label{
+
+	background: #303F9F;
+	color: #F2F2F2;
+	padding: 5px 15px;
+}
+
+.form input[type="submit"]{
+
+	background: #303F9F;
+	border: none;
+	color: #FFF;
+	cursor: pointer;
+	padding: 15px 0;
+	width: 100%;
+	-webkit-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+.form input[type="submit"]:hover{
+
+	background: #1976D2;
+}
+
+@media screen and (max-width: 425px){
+
+	.wrap{
+
+		padding: 20px;
+	}
+}

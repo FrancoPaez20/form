@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta name="description" content="Form"/>
+	<meta name="keywords" content="Form"/>
+	<meta name="author" content="DEPRO STUDIO" />
+	<meta name="copyright" content="DEPRO STUDIO" />
+	<meta name="robots" content="index"/>
+	<meta name="theme-color" content="#181818">
+	<!--<meta name="robots" content="noindex"/> -->
+	<title>Form</title>
+	<script src="https://kit.fontawesome.com/fc69885e8b.js" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+	<div class="wrap">
+
+		<form action="" class="form" name="form" method="get">
+
+			<div class="input-group">
+				<input type="text" name="name" id="name">
+				<label class="label" for="name">Name:</label>
+			</div>
+
+			<div class="input-group">
+				<input type="email" name="email" id="email">
+				<label class="label" for="email">Email:</label>
+			</div>
+
+			<div class="input-group">
+				<input type="password" name="pass" id="pass">
+				<label class="label" for="pass">Password:</label>
+			</div>
+
+			<div class="input-group">
+				<input type="password" name="repas" id="repas">
+				<label class="label" for="repas">Repear Password:</label>
+			</div>
+
+			<div class="input-group radio">
+				<input type="radio" name="sex" value="Man" id="man">
+				<label for="man">Man</label>
+				<input type="radio" name="sex" value="Woman" id="woman">
+				<label for="woman">Woman</label>
+			</div>
+
+			<div class="input-group checkbox">
+				<input type="checkbox" name="terms" value="true"  id="terms">
+				<label for="terms">Acepto los Terminos y Condiciones</label>
+			</div>
+				
+			<input type="submit" value="Submit" id="btn-submit">
+
+		</form>
+
+	</div>
+
+	<script src="index.js"></script>
+
+</body>
+</html>
